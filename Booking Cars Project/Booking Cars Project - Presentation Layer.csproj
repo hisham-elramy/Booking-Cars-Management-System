@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FA5CBC4-3F6D-4B34-8A97-5F0DF3C7991B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Booking_Cars_Project</RootNamespace>
+    <AssemblyName>Booking Cars Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PaymentsForms\frmAddPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentsForms\frmAddPayment.Designer.cs">
+      <DependentUpon>frmAddPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarForms\frmShowCarInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarForms\frmShowCarInfo.Designer.cs">
+      <DependentUpon>frmShowCarInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarForms\frmAddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarForms\frmAddCar.Designer.cs">
+      <DependentUpon>frmAddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarForms\frmUpdateCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarForms\frmUpdateCar.Designer.cs">
+      <DependentUpon>frmUpdateCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarForms\frmShowAvailableCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarForms\frmShowAvailableCars.Designer.cs">
+      <DependentUpon>frmShowAvailableCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForms\frmShowClientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForms\frmShowClientInfo.Designer.cs">
+      <DependentUpon>frmShowClientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForms\frmAddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForms\frmAddClient.Designer.cs">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForms\frmUpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForms\frmUpdateClient.Designer.cs">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingForms\frmFilterBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingForms\frmFilterBookings.Designer.cs">
+      <DependentUpon>frmFilterBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingForms\frmAddBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingForms\frmAddBooking.Designer.cs">
+      <DependentUpon>frmAddBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentsForms\frmUpdateBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentsForms\frmUpdateBooking.Designer.cs">
+      <DependentUpon>frmUpdateBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\frmShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\frmShowUserInfo.Designer.cs">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\frmUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\frmUpdateUser.Designer.cs">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business Access Layer\BusinessAccessLayer.csproj">
+      <Project>{ba77e12f-7660-42eb-b61f-6912827f140d}</Project>
+      <Name>BusinessAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PaymentsForms\frmAddPayment.resx">
+      <DependentUpon>frmAddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarForms\frmAddCar.resx">
+      <DependentUpon>frmAddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarForms\frmShowCarInfo.resx">
+      <DependentUpon>frmShowCarInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarForms\frmUpdateCar.resx">
+      <DependentUpon>frmUpdateCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarForms\frmShowAvailableCars.resx">
+      <DependentUpon>frmShowAvailableCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForms\frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForms\frmShowClientInfo.resx">
+      <DependentUpon>frmShowClientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForms\frmUpdateClient.resx">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingForms\frmFilterBookings.resx">
+      <DependentUpon>frmFilterBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingForms\frmAddBooking.resx">
+      <DependentUpon>frmAddBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentsForms\frmUpdateBooking.resx">
+      <DependentUpon>frmUpdateBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\frmShowUserInfo.resx">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\frmUpdateUser.resx">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarBackgroundLoginPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarBackgroundLoginPage1.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\CarBackgroundMainPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginCar.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
